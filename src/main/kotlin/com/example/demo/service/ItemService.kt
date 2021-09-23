@@ -18,4 +18,7 @@ class ItemService(val itemRepository: ItemRepository) {
     fun findOne(itemId:Long): Item{
         return itemRepository.findOne(itemId)
     }
+    fun findAll():MutableList<Item> {
+    	return itemRepository.findAll();
+    }
 }
